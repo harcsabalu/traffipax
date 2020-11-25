@@ -170,7 +170,7 @@ def nyolcadikFeladat():
                 speeding = True
                 speedingPoints.append(merohely)
         if speeding == True:
-            print("szerepel túllépte(" + listToString( speedingPoints) + ")")
+            print("szerepel túllépte(" + listToString(speedingPoints) + ")")
         elif speeding == False:
             print("szerepel nem_lépte_túl")
     else:
@@ -191,7 +191,7 @@ def kilencediFeladat():
 def listToString(inList):
     emptyString = ''
     for i,v in enumerate(inList):
-        if i == len(inList):
+        if i == len(inList) - 1:
             emptyString += v
         else:
             emptyString += v + ","
